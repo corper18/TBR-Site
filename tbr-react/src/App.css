@@ -1,0 +1,125 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: green;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 12px 20px;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 0px;
+  box-sizing: border-box;
+}
+
+.nav-container li {
+  list-style: none;
+}
+
+.nav-container button{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+.nav-container button:hover {
+  background-color: darkgreen;
+  border-radius: 6px;
+}
+
+h1, p {
+    text-align: center;
+}
+
+.center-under-genres {
+    text-align: center;
+    margin: 30px auto;
+    width: max-content;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #b4d4ff;
+    width: 250px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.search-bar input:focus {
+    border-color: #ffd700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+.search-bar button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #f5f4f4;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;   
+}
+
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.book img {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+    .book {
+        display: inline-block;
+        margin: 10px;
+        text-align: center;
+        font-size: 0.9rem;
+}
+
+    .book p {
+        margin-top: 5px;
+}
+
+.book img:hover {
+    transform: translateY(-15px) scale(1.08);
+    transition: transform 0.2s ease, boxshadow 0.2s ease;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4),
+                0 0 25px rgba(255, 215, 0, 0.6);
+}
+
+.page-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
