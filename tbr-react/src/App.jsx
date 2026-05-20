@@ -1,5 +1,5 @@
-import { useState } from "react";
 import "./App.css";
+import { useState } from "react";
 import Home from "./components/Home";
 import ReadingGoal from "./components/ReadingGoal";
 import MyTBR from "./components/MyTBR";
@@ -8,23 +8,29 @@ import Explore from "./components/Explore";
 import MyProfile from "./components/MyProfile";
 import Navbar from "./components/Navbar";
 import SearchBar from "./components/SearchBar";
+import { Routes, Route } from "react-router-dom";
 
 export default function App() {
-  const [activePage, setActivePage] = useState("home");
+  const [searchQuery, setSearchQuery] = useState("");
 
   return (
    <>
-      <Navbar setActivePage={setActivePage} />
+      <Navbar />
   
     <div className="page-container">
-      <SearchBar />
-      {/* detta är en genväg istället för If-sats */}
-      {activePage === "home" && <Home />}
-      {activePage === "readingGoal" && <ReadingGoal />}
-      {activePage === "mytbr" && <MyTBR />}
-      {activePage === "genres" && <Genres />}
-      {activePage === "explore" && <Explore />}
-      {activePage === "myProfile" && <MyProfile />}
+      <SearchBar 
+        searchQuery={searchQuery}
+        setSearchQuery={setSearchQuery}
+      />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/readingGoal" element={<ReadingGoal />} />
+        <Route path="/mytbr" element={<MyTBR  searchQuery={searchQuery} />} />
+        <Route path="/genres"  element={<Genres />} />
+        <Route path="/explore"  element={<Explore />} />
+        <Route path="/myprofile" element={<MyProfile />} />
+      </Routes>
     </div>
     </>
   );

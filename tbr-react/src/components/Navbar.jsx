@@ -1,16 +1,33 @@
-function Navbar (props) {
-    const setActivePage = props.setActivePage
+import { Link } from "react-router-dom";
+
+function Navbar () {
+    
     
     return(
         <nav>
             <div className="nav-container">
                 <ul>
-                   <li><button type="button" onClick={() => setActivePage("home")}>Home</button></li>
-                   <li> <button type="button" onClick={() => setActivePage("readingGoal")}>readingGoal</button></li>
-                    <li><button type="button" onClick={() => setActivePage("mytbr")}>My TBR</button></li>
-                    <li><button type="button" onClick={() => setActivePage("genres")}>Genres</button></li>
-                    <li><button type="button" onClick={() => setActivePage("explore")}>Explore</button></li>
-                    <li><button type="button" onClick={() => setActivePage("myProfile")}>My Profile</button></li>
+                    <li><Link to="/">Home</Link></li>
+
+                   <li>
+                    <Link to="/readingGoal">Reading Goal</Link>
+                   </li>
+
+                   <li>
+                    <Link to="/mytbr">My TBR</Link>
+                   </li>
+
+                   <li>
+                    <Link to="/genres">Genres</Link>
+                   </li>
+
+                   <li>
+                    <Link to="/explore">Explore</Link>
+                   </li>
+
+                   <li>
+                    <Link to="/myprofile">My Profile</Link>
+                   </li>
                 </ul>
             </div>
         </nav>

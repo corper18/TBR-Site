@@ -28,7 +28,7 @@ nav {
   list-style: none;
 }
 
-.nav-container button{
+.nav-container a {
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -39,7 +39,7 @@ nav {
   font: inherit;
 }
 
-.nav-container button:hover {
+.nav-container a:hover {
   background-color: darkgreen;
   border-radius: 6px;
 }
