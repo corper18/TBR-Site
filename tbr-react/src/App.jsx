@@ -1,4 +1,4 @@
-import "./App.css";
+import "./styles/App.css";
 import { useState } from "react";
 import HomePage from "./pages/HomePage";
 import ReadingGoalPage from "./pages/ReadingGoalPage";

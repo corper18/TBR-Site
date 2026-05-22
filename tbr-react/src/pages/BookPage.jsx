@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import myTbrBooks from "../data/myTbrBooks";
-import "./BookPage.css";
+import "../styles/BookPage.css";
 
 function BookPage() {
 

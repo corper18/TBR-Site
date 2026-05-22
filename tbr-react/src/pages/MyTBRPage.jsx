@@ -1,5 +1,6 @@
 import myTbrBooks from "../data/myTbrBooks";
 import BookCard from "../components/BookCard";
+import "../styles/MyTBRPage.css";
 
 function MyTBRPage({ searchQuery = ""}) {
      const filteredBooks = myTbrBooks.filter((book) =>
