@@ -1,13 +1,14 @@
 import "./App.css";
 import { useState } from "react";
-import Home from "./components/Home";
-import ReadingGoal from "./components/ReadingGoal";
-import MyTBR from "./components/MyTBR";
-import Genres from "./components/Genres";
-import Explore from "./components/Explore";
-import MyProfile from "./components/MyProfile";
+import HomePage from "./pages/HomePage";
+import ReadingGoalPage from "./pages/ReadingGoalPage";
+import MyTBRPage from "./pages/MyTBRPage";
+import GenresPage from "./pages/GenresPage";
+import ExplorePage from "./pages/ExplorePage";
+import MyProfilePage from "./pages/MyProfilePage";
 import Navbar from "./components/Navbar";
 import SearchBar from "./components/SearchBar";
+import BookPage from "./pages/BookPage";
 import { Routes, Route } from "react-router-dom";
 
 export default function App() {
@@ -24,12 +25,13 @@ export default function App() {
       />
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/readingGoal" element={<ReadingGoal />} />
-        <Route path="/mytbr" element={<MyTBR  searchQuery={searchQuery} />} />
-        <Route path="/genres"  element={<Genres />} />
-        <Route path="/explore"  element={<Explore />} />
-        <Route path="/myprofile" element={<MyProfile />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/readingGoal" element={<ReadingGoalPage />} />
+        <Route path="/mytbr" element={<MyTBRPage  searchQuery={searchQuery} />} />
+        <Route path="/genres"  element={<GenresPage />} />
+        <Route path="/explore"  element={<ExplorePage />} />
+        <Route path="/myprofile" element={<MyProfilePage />} />
+        <Route path="/books/:id" element={<BookPage />} />
       </Routes>
     </div>
     </>

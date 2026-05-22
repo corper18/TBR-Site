@@ -1,4 +1,4 @@
-function Explore() {
+function ExplorePage() {
     return(
         <>
         <h2>Explore Page</h2>
@@ -6,4 +6,4 @@ function Explore() {
     );
 }
 
-export default Explore;
+export default ExplorePage;

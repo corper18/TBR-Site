@@ -1,4 +1,4 @@
-function Genres() {
+function GenresPage() {
     return(
         <>
         <h2>Genres Page</h2>
@@ -6,4 +6,4 @@ function Genres() {
     );
 }
 
-export default Genres
+export default GenresPage;

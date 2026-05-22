@@ -44,7 +44,7 @@ nav {
   border-radius: 6px;
 }
 
-h1, p {
+h1, {
     text-align: center;
 }
 
@@ -86,40 +86,15 @@ h1, p {
 }
 
 .book-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    justify-items: center;
     margin-top: 20px;
 }
 
-.book img {
-    width: 150px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-    .book {
-        display: inline-block;
-        margin: 10px;
-        text-align: center;
-        font-size: 0.9rem;
-}
-
-    .book p {
-        margin-top: 5px;
-}
-
-.book img:hover {
-    transform: translateY(-15px) scale(1.08);
-    transition: transform 0.2s ease, boxshadow 0.2s ease;
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4),
-                0 0 25px rgba(255, 215, 0, 0.6);
-}
-
 .page-container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 10px;
 }

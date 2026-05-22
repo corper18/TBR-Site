@@ -1,0 +1,34 @@
+.book-card {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+
+    background-color: #f8f4e8;
+
+    padding: 12px;
+    border-radius: 10px;
+
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.08);
+}
+
+.book-card p {
+    margin-top: 5px;
+}
+
+.book-cover {
+    width: 180px;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.book-cover:hover {
+    transform: translateY(-15px) scale(1.08);
+    transition: 
+        transform 0.2s ease, 
+        box-shadow 0.2s ease;
+
+    box-shadow:
+        0 0 15px rgba(35, 44, 167, 0.6);
+}

@@ -1,6 +1,7 @@
 import myTbrBooks from "../data/myTbrBooks";
+import BookCard from "../components/BookCard";
 
-function MyTBR({ searchQuery = ""}) {
+function MyTBRPage({ searchQuery = ""}) {
      const filteredBooks = myTbrBooks.filter((book) =>
         book.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
         book.author.toLowerCase().includes(searchQuery.toLowerCase())
@@ -12,16 +13,11 @@ function MyTBR({ searchQuery = ""}) {
 
             <div className="book-container">
                 {filteredBooks.map((book) => (
-                    <div className="book" key={book.id}>
-                        <img src={book.cover} alt={book.title}/>
-                        <p>{book.title}</p>
-                        <p>{book.author}</p>
-                        <p>{book.read ? "Read " : "Not read yet"}</p>
-                    </div>
+                    <BookCard key={book.id} book={book} />
                 ))}
             </div>
         </>
     );
 }
 
-export default MyTBR;
+export default MyTBRPage;

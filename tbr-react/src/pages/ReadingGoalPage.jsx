@@ -1,4 +1,4 @@
- function ReadingGoal(){
+ function ReadingGoalPage(){
     return (
         <>
         <h2>Reading Goal Page</h2>
@@ -6,4 +6,4 @@
     );
 }
 
-export default ReadingGoal;
+export default ReadingGoalPage;
