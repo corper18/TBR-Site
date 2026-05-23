@@ -4,3 +4,42 @@
 
     object-fit: cover;
 }
+
+.book-status-select {
+    padding: 10px 14px;
+
+    border-radius: 10px;
+
+    border: 2px solid #d9d9d9;
+
+    background-color: white;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    color: #24364b;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.book-status-select:hover {
+    border-color: darkgreen;
+
+    box-shadow:
+        0 0 10px rgba(0, 100, 0, 0.2);
+}
+
+.book-status-select:focus {
+    outline: none;
+
+    border-color: darkgreen;
+
+    box-shadow:
+        0 0 15px rgba(0, 100, 0, 0.35);
+}

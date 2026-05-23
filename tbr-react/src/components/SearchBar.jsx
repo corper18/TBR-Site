@@ -1,3 +1,6 @@
+
+import "../styles/SearchBar.css";
+
 function SearchBar({ searchQuery, setSearchQuery }) {
 
     return (
