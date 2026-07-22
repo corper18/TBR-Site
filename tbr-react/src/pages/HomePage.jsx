@@ -1,4 +1,4 @@
-function Home({ setActivePage }) {
+function HomePage({ setActivePage }) {
 
     return(
         <>
@@ -8,4 +8,4 @@ function Home({ setActivePage }) {
     );
 }
 
-export default Home;
+export default HomePage;
