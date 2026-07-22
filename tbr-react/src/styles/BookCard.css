@@ -41,3 +41,22 @@
 .book-card a:hover {
     color: rgb(102, 102, 102);
 }
+
+.heart-button {
+    margin-left: auto;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+.heart-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.heart-button.active{
+    color: red;
+}
